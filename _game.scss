@@ -1,0 +1,74 @@
+@use "variables" as *;
+
+// Hangman Image + Status
+.game_image {
+  max-width: 220px;
+  width: 100%;
+}
+
+.game_status {
+  font-weight: 600;
+  min-height: 1.2em;
+  text-align: center;
+}
+
+// Word Display
+.word-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+
+  &__char {
+    min-width: 1ch;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+// Play Again Button
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: $radius-md;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: $primary;
+  color: white;
+  cursor: pointer;
+  align-self: center;
+  transition: all 0.15s;
+
+  &:hover {
+    background: $primary-hover;
+    box-shadow: $shadow-soft;
+    transform: translateY(-1px);
+  }
+}
+
+// Used Word List
+.used_words {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 0.8rem;
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+  }
+
+  li::marker {
+    content: "• ";
+  }
+}
+
+
+

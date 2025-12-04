@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+@media (min-width: 700px) {
+  .game_content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .game_visual,
+  .game_panel {
+    flex: 1;
+  }
+
+  .game_visual {
+    align-items: center;
+  }
+}
