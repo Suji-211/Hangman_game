@@ -32,3 +32,12 @@ There is a word list provided, feel free to modify it as you see fit.
 
 - Allow keyboard input
 - Keep track of words that have been used already and display them on the screen
+
+
+## 
+the game randomly picks a word from the list given.
+displays the underscores
+allows the user to guess the letters 
+updates the display if the guess is right and draw the hangman if wrong
+tells us if we win or lose after 10 guesses.
+we can play n number of times as it resets.
