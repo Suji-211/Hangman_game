@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(32px, 1fr));
+  gap: 0.4rem;
+}
+
+.key {
+  padding: 0.5rem;
+  border-radius: $radius-sm;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.1s;
+
+  &:hover:not(:disabled) {
+    background: #f0f0ff;
+    transform: translateY(-1px);
+    box-shadow: $shadow-soft;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.6;
+  }
+
+  &--correct {
+    background: $correct;
+    border-color: $correct-border;
+  }
+
+  &--wrong {
+    background: $wrong;
+    border-color: $wrong-border;
+  }
+}
