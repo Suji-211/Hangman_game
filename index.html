@@ -15,21 +15,23 @@
         <section class ="game_content">
             <section class ="game_visual">
                 <img id ="hangman-image" src = "img/h-0.jpg" alt = "Hangman" class = "game_image"/>
-                <p id = "status" class = "game_status"></p>
+                <p id = "status-message" class = "game_status"></p>
             </section>
             <section class = "game_panel">
                 <div id = "word-display" class = "word-display" aria-label="Hidden word"></div>
-                <div id = "Keyboard" class = "keyboard" aria-label="letter buttons"></div>
+                <div id="keyboard" class="keyboard" aria-label="letter buttons"></div>
                 <div class = "hangman_game_control">
-                    <button id = "play agian" class = "btn" type = "button"> Play Again ! </button>
+                    <button id="play-again" class="btn" type="button">Play Again</button>
+
                 </div>
                 <section class = "used_words">
                     <h2>Used Words</h2>
-                    <ul id = "used words list "></ul>
+                    <ul id="used-words-list"></ul>
                 </section>
             </section>
         </section>
     </main>
+    <script src = "words.js"></script> 
     <script src = "script.js"></script>
     
 </body>
