@@ -41,3 +41,6 @@ allows the user to guess the letters
 updates the display if the guess is right and draw the hangman if wrong
 tells us if we win or lose after 10 guesses.
 we can play n number of times as it resets.
+
+
+*requesting code review via pull request*
